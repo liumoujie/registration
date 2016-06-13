@@ -1,0 +1,32 @@
+{
+  "name": "registration",
+  "description": "some basic components for develop a hospital registration application",
+  "main": [
+    "js/motion.js"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "sboss",
+    "registration",
+    "hregistration"
+  ],
+  "authors": [
+    "Ring Liu <liumj6@asiainfo.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liumoujie/registration.git"
+    },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
