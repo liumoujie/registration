@@ -2,7 +2,7 @@
   "name": "registration",
   "description": "some basic components for develop a hospital registration application",
   "main": [
-    "js/motion.js"
+    "js/registration.js"
   ],
   "moduleType": [
     "amd",
