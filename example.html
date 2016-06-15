@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>挂号web版</title>
+    <script type="text/javascript" src="/sboss/registration/js/registration.js"></script>
+    <script type="text/javascript" src="/sboss/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        function submitOrder() {
+            var sBoss = new Registration();
+            sBoss.submitOrder({
+                doctor: $("#doctor").val(),
+                time: $("#time").val()
+            }).done(function (data) {
+                alert(JSON.stringify(data));
+            }).fail(function (err) {
+                alert(JSON.stringify(err));
+            });
+        }
+    </script>
+</head>
+<body>
+<div style="position:relative"><img width="20%" height="20%" src="images/fillInfo.jpg">
+    <a href="#" onclick="submitOrder()" style="display:block;width:130px;height:40px;position:absolute;left:0;border:solid 1px #ccc;bottom:10px;"></a>
+</div>
+<!--<div><input type="text" value="123" id="doctor">&nbsp;&nbsp;<input type="text" value="456" id="time"></div>-->
+<!--<div><input type="button" value="click me" onclick="submitOrder()"></div>-->
+</body>
+</html>
